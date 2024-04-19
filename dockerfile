@@ -8,8 +8,11 @@ COPY package.json ./
 # instalar dependencias
 RUN npm install
 
-#Destino /app
+# Destino /app
 COPY app.js ./
+
+# Realizar testing
+RUN npm run test
 
 #CMD [ "executable" ]
 CMD [ "node", "app.js" ]
