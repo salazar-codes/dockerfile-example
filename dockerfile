@@ -1,3 +1,5 @@
+#FROM --platform=linux/amd64 node:19.2-alpine3.17
+#FROM --platform=$BUILDPLATFORM node:19.2-alpine3.17
 FROM node:19.2-alpine3.17
 # /app
 # cd app
